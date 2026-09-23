@@ -1,0 +1,33 @@
+   h1 {
+       color: rgba(184, 108, 239, 0.728);
+       background-color: rgba(204, 10, 10, 0.301);
+   }
+
+   p {
+       background-color: rgba(109, 186, 234, 0.728);
+   }
+
+   button {
+       background-color: rgba(228, 156, 22, 0.728);
+       border: none;
+       color: rgb(245, 245, 245);
+       padding: 10px 20px;
+       text-transform: uppercase;
+       border-radius: 10px;
+       cursor: pointer;
+       margin: 5px;
+       font-size: 16px;
+       font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   }
+
+   button.btn-blue {
+       background-color: rgba(50, 50, 234, 0.9);
+   }
+
+   button.btn-red {
+       background-color: rgba(255, 23, 23, 0.9);
+   }
+
+   button.btn-black {
+       background-color: rgba(0, 0, 0, 0.9);
+   }
