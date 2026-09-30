@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Chiron+Sung+HK:ital,wght@0,200..900;1,200..900&family=Edu+QLD+Hand:wght@400..700&display=swap');
+
+h1 {
+    background-color: #f5f04b;
+    font-family:
+        'Black Ops One', system-ui;
+    font-size: 100px;
+    font-weight: bold;
+    text-align: center;
+    border-top: 5px solid #000000;
+    border-bottom: 10px dotted #000000;
+    border-radius: 100px;
+    border-color: #55458f;
+    text-shadow: -18px 20px 10px #000000;
+}
+
+h2 {
+    background-image: url('/week3/images/yyy.jpg');
+    background-size: contain;
+    background-position: top center;
+    background-repeat: no-repeat;
+    font-family:
+        'Bodoni Moda', serif;
+    text-align: right;
+    line-height: 1.5;
+}
+
+h3 {
+    font-family:
+        'Chiron Sung HK', serif;
+    text-align: center;
+    font-size: 60px;
+}
+
+p {
+    font-family:
+        'Edu QLD Hand', cursive;
+    font-size: 20px;
+    font-weight: normal;
+    text-align: justify;
+}
+
+.text-bold {
+    font-weight: bold;
+    font-size: 80px;
+    color: #27c1aa;
+    font-style: italic;
+}
