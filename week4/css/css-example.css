@@ -1,0 +1,42 @@
+  .box {
+      padding: 10px;
+      flex: 1;
+  }
+
+  .big-box {
+      display: flex;
+      gap: 20px;
+      max-width: 1080px;
+      margin: auto;
+  }
+
+  .div-yellow {
+      background-color: yellow;
+  }
+
+  .div-red {
+      background-color: #FFC0C7;
+      flex: 2;
+  }
+
+  .div-green {
+      background-color: #D9EEE1
+  }
+
+
+  @media (max-width: 800px) {
+      .div-green {
+          background-color: #2312da;
+      }
+
+      .big-box {
+          flex-direction: column;
+      }
+  }
+
+  @media (max-width: 500px) {
+      .div-green {
+          display: none;
+
+      }
+  }
