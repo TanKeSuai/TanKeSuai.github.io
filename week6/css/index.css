@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+body {
+    margin: 0%;
+    font-family: Space Manrope;
+}
+
+.menu {
+    padding: 10px;
+    justify-content: right;
+    display: flex
+}
+
+
+
+.banner {
+    min-height: 500px;
+    background-image: url('../images/banner.jpg');
+    background-size: cover;
+}
+
+.subscribe-button {
+    background: #F84646;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.email-input {
+    border: none;
+}
+
+.subscribe-form {
+    background: white;
+    border: none;
+    padding: 2px;
+    border-radius: 3px;
+    display: inline-block;
+}
+
+.banner-content {
+    width: 50%;
+}
+
+.email-input:focus {
+    outline: none;
+}
+
+.menu-button {
+    background: #F84646;
+    border: none;
+    color: white;
+    padding: 8px 20px;
+    cursor: pointer;
+    border-radius: 2px;
+
+}
+
+.banner2 {
+    text-align: center;
+}
+
+
+.banner3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 500px;
+    margin-top: 40px;
+}
+
+
+.banner3 {
+    display: flex;
+    justify-content: center;
+
+    align-items: flex-start;
+
+    gap: 300px;
+
+    padding: 40px 20px;
+}
+
+
+.card {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+
+    text-align: center;
+
+    max-width: 250px;
+
+}
+
+.card h3 {
+    margin-top: 15px;
+    margin-bottom: 8px;
+    font-size: 18px;
+}
+
+.card p {
+    margin: 0;
+    font-size: 14px;
+}
+
+
+.banner4 {
+    background: #F84646;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.banner4-items {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+
+
+.banner4-items .T {
+    margin: 0;
+    max-width: 200px;
+}
+
+@media (max-width: 1024px) {
+
+    .banner {
+        background-position: center 10%;
+    }
+
+    .banner-content {
+        background-position: center 70%;
+    }
+
+    @media (max-width: 600px) {
+        .banner {
+            background-position: center 80%;
+        }
+
+        .banner-content {
+            width: 100%;
+            text-align: center;
+        }
+    }
+}
