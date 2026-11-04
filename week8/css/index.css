@@ -14,10 +14,9 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
     padding: 0 100px;
     box-sizing: border-box;
-    align-items: center;
 }
 
 h1 {
@@ -38,26 +37,23 @@ h6 {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 60px;
-    padding: 60px 80px;
-    width: auto;
-
+    gap: 40px;
+    padding: 60px 40px;
+    background-color: white;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .img-box1,
 .img-box2,
 .img-box3 {
-    min-height: 500px;
-    min-width: 100px;
-    background-image: url('../images/back.png');
+    position: relative;
+    width: 450px;
+    height: 480px;
     background-size: cover;
     background-position: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    padding: 100px 200px;
-    align-items: center;
+    overflow: hidden;
+    flex-shrink: 0;
 }
 
 .img-box1 {
@@ -73,48 +69,490 @@ h6 {
 }
 
 .img-box-content {
-    margin: 0;
-    display: flex;
-    justify-content: right;
-    align-items: end;
-    color: white;
-    width: 100%;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
     text-align: right;
+    z-index: 2;
+}
+
+.img-box-content h5 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 18px;
+    letter-spacing: 1px;
+    color: #FFFFFF;
+    margin: 0;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.8);
 }
 
 .banner3 {
-    color: black;
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    min-height: 100vh;
-    padding: 0 80px;
+    background-color: #ffffff;
+    color: black;
+    width: 100%;
     box-sizing: border-box;
-    flex: 1;
+}
 
+.banner3 .background {
+    flex: 1;
+    height: 100vh;
+    max-height: 800px;
+    overflow: hidden;
+    margin: 0;
+}
+
+.banner3 .background img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.banner3-right {
+    flex: 1;
+    padding: 0 60px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .banner3 h1 {
     color: black;
-    font-size: 60px;
-    margin-bottom: 20px;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 52px;
+    letter-spacing: 2px;
+    margin: 0 0 35px 0;
 }
 
 .banner3 h2 {
     color: black;
-    font-size: 30px;
-    margin-bottom: 20px;
+    font-size: 20px;
     font-family: 'Bebas Neue', sans-serif;
+    letter-spacing: 1px;
+    margin: 0 0 8px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.banner3 h2 .price {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 14px;
+    color: #333333;
 }
 
 .banner3 p {
-    color: black;
-    font-size: 16px;
-    line-height: 1.5;
-    font-family: 'Lora', sans-serif;
-    border-bottom: 1px solid gray;
+    color: #666666;
+    font-size: 13.5px;
+    line-height: 1.6;
+    font-family: 'Lora', serif;
+    margin: 0 0 25px 0;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #eeeeee;
 }
 
-.banner3-right {
-    gap: 20px;
-    padding: 0 20px;
+.dessert-banner {
+    position: relative;
+    width: 100%;
+    height: 350px;
+    background-image: url('../images/dessert-bg.png');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.dessert-banner::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.55);
+    z-index: 1;
+}
+
+.dessert-banner h1 {
+    position: relative;
+    z-index: 2;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 56px;
+    letter-spacing: 3px;
+    color: #FFFFFF;
+    margin: 0;
+}
+
+.banner5 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    padding: 80px 60px;
+    background-color: #ffffff;
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    align-items: start;
+}
+
+.banner5 .menu-card:nth-child(2),
+.banner5 .menu-card:nth-child(4) {
+    margin-top: 60px;
+}
+
+.menu-card {
+    display: flex;
+    flex-direction: column;
+}
+
+.menu-card .card-img {
+    width: 100%;
+    height: 100%;
+    min-height: 400px;
+    overflow: hidden;
+    background-color: #f9f9f9;
+}
+
+.menu-card .card-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.card-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 12px;
+    padding-bottom: 6px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.item-name {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 20px;
+    letter-spacing: 1px;
+    color: #000000;
+}
+
+.item-price {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    color: #333333;
+}
+
+.banner6 {
+    position: relative;
+    width: 100%;
+    min-height: 550px;
+    background-image: url('../images/cocktail-bg.png');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding: 0 100px;
+    box-sizing: border-box;
+}
+
+.banner6::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.65);
+    z-index: 1;
+}
+
+.banner6-content {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    color: #FFFFFF;
+    max-width: 550px;
+}
+
+.banner6 h2 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 60px;
+    letter-spacing: 2px;
+    margin: 0 0 10px 0;
+    color: #FFFFFF;
+}
+
+.banner6 .sub-text {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 15px;
+    letter-spacing: 4px;
+    color: #DDDDDD;
+    margin-bottom: 20px;
+}
+
+.banner6 .divider {
+    width: 50px;
+    height: 1px;
+    background-color: #888888;
+    border: none;
+    margin: 0 0 25px 0;
+}
+
+.banner6 p {
+    font-family: 'Lora', serif;
+    font-size: 17px;
+    line-height: 1.8;
+    color: #C8C8C8;
+    margin: 0 0 35px 0;
+}
+
+.banner6 .about-btn {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 15px;
+    letter-spacing: 1.5px;
+    background: transparent;
+    color: #FFFFFF;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    padding: 10px 24px;
+    cursor: default;
+}
+
+@media (max-width: 1024px) {
+    .banner {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0 20px;
+        min-height: 400px;
+        text-align: center;
+    }
+
+    .banner h6 {
+        order: 1;
+        margin: 0 0 10px 0;
+    }
+
+    .banner h1 {
+        order: 2;
+        font-size: 50px;
+        margin: 0;
+    }
+
+    .banner2 {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        padding: 40px 20px;
+    }
+
+    .img-box1,
+    .img-box2,
+    .img-box3 {
+        width: 100% !important;
+        max-width: 450px;
+        height: 380px;
+    }
+
+    .banner3 {
+        flex-direction: column;
+        padding: 40px 20px;
+    }
+
+    .banner3 .background {
+        width: 100%;
+        height: 350px;
+        max-height: none;
+    }
+
+    .banner3-right {
+        width: 100%;
+        padding: 30px 20px 0 20px;
+        align-items: flex-start;
+    }
+
+    /* 让主菜大标题靠左 */
+    .banner3 h1 {
+        font-size: 40px;
+        text-align: left;
+        width: 100%;
+    }
+
+    /* 核心修复：让菜名和价格这一行占满 100% 宽度，从而使两端对齐生效，把价格推到右边 */
+    .banner3 h2 {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .dessert-banner {
+        height: 250px;
+    }
+
+    .dessert-banner h1 {
+        font-size: 42px;
+    }
+
+    .banner5 {
+        grid-template-columns: 1fr;
+        gap: 40px;
+        padding: 40px 20px;
+    }
+
+    .banner5 .menu-card:nth-child(2),
+    .banner5 .menu-card:nth-child(4) {
+        margin-top: 0;
+    }
+
+    /* 核心：在移动端让每个卡片内部的文字永远排在图片上面 */
+    .banner5 .menu-card {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .banner5 .menu-card .card-info {
+        order: 1;
+        /* 文字排在第一行 */
+    }
+
+    .banner5 .menu-card .card-img {
+        order: 2;
+        /* 图片排在第二行 */
+        height: 500px;
+        min-height: auto;
+    }
+
+
+    .banner6 {
+        padding: 60px 30px;
+        min-height: 450px;
+    }
+
+    .banner6 h2 {
+        font-size: 40px;
+    }
+
+
+}
+
+
+@media (max-width: 700px) {
+
+    .banner {
+        min-height: 350px;
+        padding: 0 15px;
+    }
+
+    .banner h1 {
+        font-size: 36px;
+        letter-spacing: 1px;
+    }
+
+    .banner h6 {
+        font-size: 13px;
+        margin-bottom: 8px;
+    }
+
+    .banner2 {
+        padding: 20px 0;
+        gap: 15px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .img-box1,
+    .img-box2,
+    .img-box3 {
+        width: 100%;
+        max-width: none;
+        height: 360px;
+    }
+
+    .img-box-content {
+        position: absolute;
+        bottom: 20px;
+        left: 0;
+        right: 0;
+        text-align: center;
+        padding: 0 20px;
+    }
+
+    .img-box-content h5 {
+        text-align: center;
+    }
+
+    .banner3-right {
+        padding: 25px 15px 0 15px;
+    }
+
+    .banner3 h1 {
+        font-size: 32px;
+        margin-bottom: 25px;
+    }
+
+    .banner3 h2 {
+        font-size: 17px;
+    }
+
+    .banner3 h2 .price {
+        font-size: 13px;
+    }
+
+    .banner3 p {
+        font-size: 12.5px;
+        margin-bottom: 20px;
+        padding-bottom: 12px;
+    }
+
+    .dessert-banner {
+        height: 200px;
+    }
+
+    .dessert-banner h1 {
+        font-size: 36px;
+    }
+
+    .banner5 {
+        padding: 30px 15px;
+        gap: 30px;
+    }
+
+    .menu-card .card-img {
+        height: 1000px;
+        min-height: auto;
+
+        .item-name {
+            font-size: 17px;
+        }
+
+        .item-price {
+            font-size: 13px;
+        }
+
+        .banner6 {
+            padding: 50px 20px;
+            min-height: 400px;
+        }
+
+        .banner6 h2 {
+            font-size: 34px;
+        }
+
+        .banner6 p {
+            font-size: 14px;
+            line-height: 1.6;
+        }
+
+    }
 }
