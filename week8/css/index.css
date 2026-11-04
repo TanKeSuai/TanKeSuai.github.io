@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lora:ital,wght@0,400..700;1,400..700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    margin: 0;
+    background-color: white;
+}
+
+.banner {
+    position: relative;
+    min-height: 550px;
+    background-image: url('../images/back.png');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0 100px;
+    box-sizing: border-box;
+    align-items: center;
+}
+
+h1 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 100px;
+    letter-spacing: 2px;
+    color: #FFFFFF;
+    margin: 0 0 15px 0;
+}
+
+h6 {
+    font-family: 'Work Sans', sans-serif;
+    color: #FFFFFF;
+    margin: 0 0 15px 0;
+}
+
+.banner2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    padding: 60px 80px;
+    width: auto;
+
+}
+
+.img-box1,
+.img-box2,
+.img-box3 {
+    min-height: 500px;
+    min-width: 100px;
+    background-image: url('../images/back.png');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 100px 200px;
+    align-items: center;
+}
+
+.img-box1 {
+    background-image: url('../images/food1.png');
+}
+
+.img-box2 {
+    background-image: url('../images/food2.png');
+}
+
+.img-box3 {
+    background-image: url('../images/food3.png');
+}
+
+.img-box-content {
+    margin: 0;
+    display: flex;
+    justify-content: right;
+    align-items: end;
+    color: white;
+    width: 100%;
+    text-align: right;
+}
+
+.banner3 {
+    color: black;
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    padding: 0 80px;
+    box-sizing: border-box;
+    flex: 1;
+
+}
+
+.banner3 h1 {
+    color: black;
+    font-size: 60px;
+    margin-bottom: 20px;
+}
+
+.banner3 h2 {
+    color: black;
+    font-size: 30px;
+    margin-bottom: 20px;
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+.banner3 p {
+    color: black;
+    font-size: 16px;
+    line-height: 1.5;
+    font-family: 'Lora', sans-serif;
+    border-bottom: 1px solid gray;
+}
+
+.banner3-right {
+    gap: 20px;
+    padding: 0 20px;
+}
