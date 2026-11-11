@@ -1,0 +1,308 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lora:ital,wght@0,400..700;1,400..700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    margin: 0;
+    background-color: black;
+}
+
+.banner {
+    position: relative;
+    min-height: 1000px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../images/back.png');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 100px;
+    box-sizing: border-box;
+}
+
+.banner h1 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 100px;
+    letter-spacing: 2px;
+    color: #FFFFFF;
+    margin: 0 0 15px 0;
+}
+
+.banner h6 {
+    font-family: 'Work Sans', sans-serif;
+    color: #FFFFFF;
+    margin: 0 0 15px 0;
+}
+
+.banner2 {
+    color: black;
+    display: flex;
+    align-items: center;
+    min-height: 300px;
+    padding: 0 60px;
+    box-sizing: border-box;
+    justify-content: space-between;
+    gap: 10px;
+    margin: 0;
+    background: white;
+}
+
+.banner2 p {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: black;
+    margin: 0 0 15px 0;
+}
+
+.banner2 h2 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 40px;
+    color: black;
+    margin: 0 0 15px 0;
+}
+
+.p1 {
+    font-family: 'Lora', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: black;
+    margin: 0 0 15px 0;
+}
+
+.view-cart {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 13px;
+    letter-spacing: 1px;
+    background: transparent;
+    color: black;
+    border: 1px solid #cccccc;
+    padding: 8px 24px;
+    cursor: default;
+}
+
+.title {
+    background: black;
+    width: 100%;
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 60px 40px 0 40px;
+    box-sizing: border-box;
+    text-align: left;
+}
+
+.title p {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 11px;
+    letter-spacing: 1.5px;
+    color: #A1A1A1;
+    margin: 0 0 8px 0;
+    text-transform: uppercase;
+}
+
+.title h2 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 36px;
+    letter-spacing: 1px;
+    color: #FFFFFF;
+    margin: 0;
+    line-height: 1;
+}
+
+.banner3 {
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 40px;
+    padding: 30px 40px 60px 40px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.banner3 p {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 12px;
+    color: #FFFFFF;
+    margin: 0 0 15px 0;
+}
+
+.banner3 h2 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 26px;
+    color: #FFFFFF;
+    margin: 0 0 15px 0;
+}
+
+.p-Lora {
+    font-family: 'Lora', sans-serif;
+    font-size: 12px;
+    color: #FFFFFF;
+    margin: 0 0 15px 0;
+}
+
+.price {
+    color: #BDA16B
+}
+
+
+.img-box1,
+.img-box2 {
+    display: flex;
+    flex-direction: column;
+    background: #333333;
+    width: 100%;
+    max-width: 550px;
+}
+
+.img-box1 img,
+.img-box2 img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: left;
+}
+
+.card-actions {
+    display: flex;
+    gap: 12px;
+    margin-top: 15px;
+    align-items: center;
+}
+
+.quantity-form {
+    display: flex;
+    align-items: center;
+    width: 120px;
+    background: #333333;
+}
+
+.quantity-form .value-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #555;
+    width: 36px;
+    height: 40px;
+    background: #222;
+    color: white;
+    user-select: none;
+}
+
+.quantity-form .value-button:hover {
+    cursor: pointer;
+    background: #444;
+}
+
+.quantity-form .number-input {
+    text-align: center;
+    border: none;
+    border-top: 1px solid #555;
+    border-bottom: 1px solid #555;
+    width: 48px;
+    height: 40px;
+    background: #222;
+    color: white;
+    font-family: 'Lora', sans-serif;
+}
+
+.quantity-form input[type=number]::-webkit-inner-spin-button,
+.quantity-form input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.add-to-cart {
+    flex: 1.2;
+    height: 40px;
+    background: #BDA16B;
+    color: white;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    border: none;
+    cursor: pointer;
+    transition: opacity 0.2s;
+}
+
+.add-to-cart:hover {
+    opacity: 0.85;
+}
+
+.view-cart-btn {
+    flex: 1;
+    height: 40px;
+    background: transparent;
+    color: #FFFFFF;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 12px;
+    letter-spacing: 1px;
+    border: 1px solid #A1A1A1;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.view-cart-btn:hover {
+    background: #222;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+form {
+    display: flex;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.value-button {
+    display: inline-block;
+    border: 1px solid #ddd;
+    margin: 0px;
+    width: 33.33%;
+    height: 40px;
+    text-align: center;
+    padding: 11px 0;
+    background: none;
+    color: white;
+
+}
+
+.value-button:hover {
+    cursor: pointer;
+}
+
+form #decrease {
+    margin-right: -4px;
+}
+
+form #increase {
+    margin-left: -4px;
+}
+
+input#number {
+    text-align: center;
+    border: none;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    margin: 0px;
+    width: 33.33%;
+    height: 40px;
+    background: none;
+    color: white;
+    font-family: 'Lora', sans-serif;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
