@@ -31,6 +31,16 @@ body {
     box-sizing: border-box;
 }
 
+.mobile-banner-text {
+    display: none;
+}
+
+.desktop-banner-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .banner h1 {
     font-family: 'Bebas Neue', sans-serif;
     font-size: 100px;
@@ -592,6 +602,16 @@ body {
 
     .banner {
         padding: 0 40px;
+    }
+
+    .desktop-banner-text {
+        display: none !important;
+    }
+
+    .mobile-banner-text {
+        display: flex !important;
+        flex-direction: column;
+        align-items: center;
     }
 
     .banner2 {
