@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lora:ital,wght@0,400..700;1,400..700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    margin: 0;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 20px 40px;
+    box-sizing: border-box;
+    z-index: 10;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: #FFFFFF;
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+.logo img,
+.logo-icon {
+    width: 36px;
+    height: auto;
+}
+
+.logo .ROMALIYA {
+    color: #FFFFFF;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 24px;
+    letter-spacing: 3px;
+}
+
+.menu {
+    padding: 10px 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 15px;
+    background-color: black;
+    color: #A1A1A1;
+    font-family: 'Work Sans', sans-serif;
+}
+
+.menu-home {
+    color: white;
+}
+
+.burger {
+    display: none;
+    align-items: center;
+}
+
+.banner {
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    background-color: black;
+    min-height: 100vh;
+    padding: 20px;
+    box-sizing: border-box;
+    margin: auto;
+    gap: 30px;
+}
+
+.RomaliyaRESTAURANT {
+    background-color: black;
+    max-width: 480px;
+}
+
+.WELCOME {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 11px;
+    letter-spacing: 4px;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+}
+
+.banner h1 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 64px;
+    line-height: 0.95;
+    letter-spacing: 2px;
+    color: #FFFFFF;
+    margin: 0 0 25px 0;
+}
+
+.banner p {
+    font-family: 'Lora', serif;
+    font-size: 13.5px;
+    line-height: 1.7;
+    color: #C8C8C8;
+    margin: 0;
+}
+
+.background {
+    flex: 1;
+}
+
+.DISCOVER-MORE {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 13px;
+    letter-spacing: 1px;
+    background: transparent;
+    color: white;
+    border: 1px solid #cccccc;
+    padding: 4px 10px;
+    cursor: default;
+}
+
+.banner2 {
+    background: white;
+    justify-content: center;
+    align-items: stretch;
+    gap: 30px;
+    padding: 30px 40px 60px 40px;
+    width: 100%;
+    max-width: 1260px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.title {
+    text-align: center;
+}
+
+
+
+.cards-container {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+
+}
+
+.img-box {
+    gap: 100px;
+    padding: 20px;
+    text-align: center;
+}
+
+.img-box button {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 13px;
+    letter-spacing: 1px;
+    background: transparent;
+    color: black;
+    border: 1px solid #cccccc;
+    padding: 4px 20px;
+    cursor: default;
+}
+
+.banner2 h2 {
+
+    font-family: 'Lora', serif;
+    font-size: 48px;
+    line-height: 0.95;
+    letter-spacing: 2px;
+    color: #000000;
+    margin: 0 0 25px 0;
+}
+
+.banner2 h1 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 60px;
+    line-height: 0.95;
+    letter-spacing: 2px;
+    color: #000000;
+    margin: 0 0 25px 0;
+}
+
+.banner2 p {
+    font-family: 'Lora', serif;
+    font-size: 13.5px;
+    line-height: 1.7;
+    color: #000000;
+    margin: 0;
+}
+
+.banner3 {
+    position: relative;
+    min-height: 500px;
+    background-image: url('../images/back2.jpg');
+    background-size: cover;
+    background-position: top;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 100px;
+    box-sizing: border-box;
+
+}
+
+.banner3 h5 {
+    font-family: 'Work Sans', serif;
+    font-size: 10px;
+    line-height: 0.95;
+    letter-spacing: 2px;
+    color: #FFFFFF;
+    margin: 0 0 25px 0;
+}
+
+.banner3 h1 {
+    font-family: 'Bebas Neue', serif;
+    font-size: 60px;
+    line-height: 0.95;
+    letter-spacing: 2px;
+    color: #FFFFFF;
+    margin: 0 0 25px 0;
+}
+
+.banner3 p {
+    font-family: 'Lora', serif;
+    font-size: 12px;
+    line-height: 0.95;
+    letter-spacing: 2px;
+    color: #FFFFFF;
+    margin: 0 0 25px 0;
+}
+
+.banner4 {
+    position: relative;
+    display: flex;
+}
+
+
+
+.image-box .image-box2 .image-box3 {
+    display: flex;
+}
+
+.image-box {
+    position: relative;
+    left: 80px;
+    top: 60px;
+}
+
+.image-box2 {
+    position: relative;
+    left: 1000px;
+    top: 60px;
+}
