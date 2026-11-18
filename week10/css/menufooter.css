@@ -62,7 +62,7 @@ body {
 .banner4 {
     position: relative;
     min-height: 450px;
-    background-image: url('../images/back3.jpg');
+    background-image: url('../images/footer.jpg');
     background-size: cover;
     background-position: center;
     display: flex;

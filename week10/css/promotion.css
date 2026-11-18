@@ -62,18 +62,38 @@ body {
 .banner {
     color: #FFFFFF;
     display: flex;
-    align-items: center;
+    align-items: stretch;
     background-color: black;
     min-height: 100vh;
-    padding: 20px;
-    box-sizing: border-box;
-    margin: auto;
-    gap: 30px;
+    padding: 0;
+    margin: 0;
+}
+
+.background {
+    width: 50%;
+    min-width: 350px;
+}
+
+.background img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
 }
 
 .RomaliyaRESTAURANT {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 80px 80px 40px 80px;
+    box-sizing: border-box;
     background-color: black;
-    max-width: 480px;
+}
+
+.RomaliyaRESTAURANT p {
+    max-width: 380px;
 }
 
 .WELCOME {
@@ -86,7 +106,7 @@ body {
 
 .banner h1 {
     font-family: 'Bebas Neue', sans-serif;
-    font-size: 64px;
+    font-size: 84px;
     line-height: 0.95;
     letter-spacing: 2px;
     color: #FFFFFF;
@@ -101,9 +121,6 @@ body {
     margin: 0;
 }
 
-.background {
-    flex: 1;
-}
 
 .DISCOVER-MORE {
     font-family: 'Work Sans', sans-serif;
@@ -227,25 +244,447 @@ body {
     margin: 0 0 25px 0;
 }
 
-.banner4 {
-    position: relative;
-    display: flex;
+.banner5 {
+    max-width: 1000px;
+    margin: 80px auto;
+    padding: 0 20px;
+    box-sizing: border-box;
 }
 
-
-
-.image-box .image-box2 .image-box3 {
-    display: flex;
+.banner5 h1 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 20px;
+    letter-spacing: 1px;
+    color: #000000;
+    margin: 0;
 }
 
 .image-box {
+    display: flex;
+    align-items: center;
+    gap: 40px;
     position: relative;
-    left: 80px;
-    top: 60px;
+    z-index: 2;
+}
+
+.image-box img {
+    width: 58%;
+    display: block;
 }
 
 .image-box2 {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 80px;
+    margin-top: -150px;
+    margin-right: 40px;
     position: relative;
-    left: 1000px;
-    top: 60px;
+    z-index: 1;
+}
+
+.image-box2 img {
+    width: 44%;
+    display: block;
+}
+
+.image-box3 {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-top: -70px;
+    margin-left: 22%;
+    position: relative;
+    z-index: 2;
+}
+
+.image-box3 img {
+    width: 45%;
+    display: block;
+}
+
+.banner5-footer {
+    text-align: center;
+    margin-top: 60px;
+}
+
+.banner5-footer p {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 10px;
+    letter-spacing: 2px;
+    color: #666666;
+    margin-bottom: 20px;
+}
+
+.banner5-footer button {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 11px;
+    letter-spacing: 1px;
+    background: transparent;
+    color: #333333;
+    border: 1px solid #cccccc;
+    padding: 8px 24px;
+    cursor: pointer;
+}
+
+.banner6 {
+    min-height: 360px;
+    background-image: url('../images/back3.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 40px 20px;
+    box-sizing: border-box;
+}
+
+.banner6 h1 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 56px;
+    line-height: 1;
+    letter-spacing: 2px;
+    color: #FFFFFF;
+    margin: 0 0 20px 0;
+}
+
+.banner6 p {
+    font-family: 'Lora', serif;
+    font-size: 13.5px;
+    line-height: 1.8;
+    color: #E0E0E0;
+    max-width: 650px;
+    margin: 0;
+}
+
+.banner7 {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    max-width: 1100px;
+    margin: 70px auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.tier-card {
+    flex: 1;
+    min-height: 420px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 25px 30px 25px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+}
+
+.card1 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../images/back4.jpg');
+}
+
+.card2 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../images/back5.jpg');
+}
+
+.card3 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../images/back6.jpg');
+}
+
+.tier-card h5 {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 11px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    margin: 0 0 20px 0;
+}
+
+.tier-card h1 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 28px;
+    letter-spacing: 1px;
+    margin: 0 0 30px 0;
+    text-align: center;
+}
+
+.tier-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 30px 0;
+    width: 100%;
+    max-width: 220px;
+}
+
+.tier-list li {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-family: 'Lora', serif;
+    font-size: 13px;
+    margin-bottom: 18px;
+}
+
+.tier-list li img {
+    width: 12px;
+    height: 12px;
+    object-fit: contain;
+}
+
+.tier-card button {
+    margin-top: auto;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 11px;
+    letter-spacing: 1.5px;
+    background: transparent;
+    color: #FFFFFF;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    padding: 8px 45px;
+    cursor: pointer;
+}
+
+@media (max-width: 1024px) {
+
+    .header {
+        padding: 20px 30px;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .burger {
+        display: flex;
+        cursor: pointer;
+    }
+
+    .banner {
+        flex-direction: column;
+        min-height: auto;
+    }
+
+    .background {
+        width: 100%;
+        min-width: 100%;
+        height: auto;
+        padding-top: 76px;
+        background-color: black;
+    }
+
+    .background img {
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+    }
+
+    .RomaliyaRESTAURANT {
+        width: 100%;
+        max-width: 100%;
+        padding: 60px 10%;
+    }
+
+    .banner2 {
+        padding: 60px 20px;
+    }
+
+    .cards-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+    }
+
+    .img-box {
+        width: 100%;
+        max-width: 420px;
+        padding: 0;
+    }
+
+    .img-box img {
+        width: 100%;
+        max-width: 320px;
+        height: auto;
+    }
+
+    .banner3 {
+        min-height: 360px;
+        padding: 40px 30px;
+        text-align: center;
+    }
+
+    .banner3 p {
+        line-height: 1.7;
+        max-width: 550px;
+    }
+
+    .banner5 {
+        margin: 60px auto;
+    }
+
+    .image-box,
+    .image-box2,
+    .image-box3 {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        margin: 0 0 50px 0;
+        text-align: center;
+    }
+
+    .image-box img,
+    .image-box2 img,
+    .image-box3 img {
+        width: 75%;
+        max-width: 420px;
+    }
+
+    .image-box2 img {
+        order: 1;
+    }
+
+    .image-box2 .text-box {
+        order: 2;
+    }
+
+    .banner5-footer {
+        margin-top: 20px;
+    }
+
+    .banner6 {
+        min-height: 300px;
+        padding: 40px 30px;
+    }
+
+    .banner7 {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        gap: 40px;
+        max-width: 760px;
+        margin: 60px auto;
+        padding: 0 30px;
+    }
+
+    .tier-card {
+        flex: none;
+        width: calc(50% - 20px);
+        min-height: 400px;
+    }
+}
+
+@media (max-width: 640px) {
+
+    .header {
+        padding: 15px 20px;
+    }
+
+    .logo .ROMALIYA {
+        font-size: 20px;
+    }
+
+    .background {
+        padding-top: 66px;
+    }
+
+    .RomaliyaRESTAURANT {
+        padding: 45px 25px;
+    }
+
+    .banner h1 {
+        font-size: 42px;
+        margin-bottom: 18px;
+    }
+
+    .banner2 {
+        padding: 45px 20px;
+    }
+
+    .banner2 h2 {
+        font-size: 32px;
+        margin-bottom: 12px;
+    }
+
+    .banner2 h1 {
+        font-size: 40px;
+        margin-bottom: 15px;
+    }
+
+    .img-box img {
+        max-width: 280px;
+    }
+
+    .banner3 {
+        min-height: 280px;
+        padding: 35px 20px;
+    }
+
+    .banner3 h1 {
+        font-size: 38px;
+        margin-bottom: 15px;
+    }
+
+    .banner3 p {
+        font-size: 11px;
+        line-height: 1.6;
+    }
+
+    .banner5 {
+        margin: 45px auto;
+        padding: 0 20px;
+    }
+
+    .image-box,
+    .image-box2,
+    .image-box3 {
+        margin-bottom: 40px;
+        gap: 15px;
+    }
+
+    .image-box img,
+    .image-box2 img,
+    .image-box3 img {
+        width: 85%;
+        max-width: 340px;
+    }
+
+    .banner5 h1 {
+        font-size: 18px;
+    }
+
+    .banner6 {
+        min-height: 240px;
+        padding: 35px 20px;
+    }
+
+    .banner6 h1 {
+        font-size: 38px;
+        margin-bottom: 14px;
+    }
+
+    .banner6 p {
+        font-size: 12px;
+        line-height: 1.6;
+    }
+
+    .banner7 {
+        flex-direction: column;
+        align-items: center;
+        gap: 35px;
+        max-width: 100%;
+        margin: 45px auto;
+        padding: 0 25px;
+    }
+
+    .tier-card {
+        width: 100%;
+        max-width: 340px;
+        min-height: 380px;
+        padding: 35px 20px 25px 20px;
+    }
+
+    .banner4 {
+        padding: 40px 20px;
+        text-align: center;
+    }
 }
