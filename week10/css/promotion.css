@@ -54,6 +54,15 @@ body {
     color: white;
 }
 
+.menu a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.menu a:visited {
+    color: inherit;
+}
+
 .burger {
     display: none;
     align-items: center;
