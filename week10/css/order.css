@@ -20,7 +20,7 @@ body {
 .banner {
     position: relative;
     min-height: 1000px;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../images/back.png');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../images4/back.png');
     background-size: cover;
     background-position: center;
     display: flex;
